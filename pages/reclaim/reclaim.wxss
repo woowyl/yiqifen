@@ -1,3 +1,6 @@
+.reclaim {
+  background: #f6f6f6;
+}
 .swiper-wapper {
   width: 100%;
   height: 350rpx;
@@ -5,4 +8,37 @@
 .slide-image {
   height: 350rpx;
   width:100%;
+}
+.category {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  margin-top: 40rpx;
+}
+.category .type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140rpx;
+  width: 48%;
+  background: #fff;
+  border-radius: 16rpx;
+}
+.category .type image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 10rpx;
+}
+.category .phone.type image {
+  width: 70rpx;
+  height: 70rpx;
+}
+.type-text {
+  font-size: 34rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

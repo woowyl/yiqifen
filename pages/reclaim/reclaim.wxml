@@ -8,19 +8,14 @@
       </swiper-item>
     </block>
   </swiper>
-  <view class="">
-    <view class="">
-      <img src="" alt="">
-      <text class="" selectable="false" space="false" decode="false">
-          电子回收
-        </text>
+  <view class="category">
+    <view class="phone type" bindtap="alertValid">
+      <image src="../../images/reclaim/i-phone.png" alt=""></image>
+      <text class="type-text" selectable="false" space="false" decode="false">电子回收</text>
     </view>
-    <view>
-        <img src="" alt="">
-        <text class="" selectable="false" space="false" decode="false">
-          旧衣回收
-        </text>
-          
+    <view class="cloth type" bindtap="alertValid">
+      <image src="../../images/reclaim/i-cloth.png" alt=""></image>
+      <text class="type-text" selectable="false" space="false" decode="false">旧衣回收</text>   
     </view>
       
   </view>

@@ -30,5 +30,17 @@ Page({
     this.setData({
       duration: e.detail.value
     })
+  },
+  alertValid: function() {
+    wx.showToast({
+      title: '等待商家入驻',
+      icon: 'none',
+      duration: 2000,
+      success: function() {
+        setTimeout(function() {
+          wx.hideToast()
+        },1000);
+      }
+    })    
   }
 })
