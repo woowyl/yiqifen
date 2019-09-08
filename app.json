@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/reclaim/reclaim",
+    "pages/store/store"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#123a72",
+    "navigationBarTitleText": "益旗分",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#be2728",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/bottom/category.png",
+        "selectedIconPath": "images/bottom/category-cur.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/store/store",
+        "iconPath": "images/bottom/store.png",
+        "selectedIconPath": "images/bottom/store-cur.png",
+        "text": "积分"
+      },
+      {
+        "pagePath": "pages/reclaim/reclaim",
+        "iconPath": "images/bottom/circle.png",
+        "selectedIconPath": "images/bottom/circle-cur.png",
+        "text": "回收"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/bottom/mine.png",
+        "selectedIconPath": "images/bottom/mine-cur.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

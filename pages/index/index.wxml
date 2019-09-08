@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top-search">
+     <icon class="i-search" type="search" size="20" color="#123a72"/>
+     <input class="search-input" placeholder="请输入想要查询的垃圾名称"/>
+  </view>
+  <view class="index-wrapper">
+      <view class="left-cate">
+          <view bindtap="changeTab" data-idx="glj" class="r-type text-center {{type == 'glj'? 'cur':''}}">
+              干垃圾
+          </view>
+          <view bindtap="changeTab"  data-idx="slj" class="r-type text-center {{type == 'slj'? 'cur':''}}">
+              湿垃圾
+          </view>
+          <view bindtap="changeTab" data-idx="yhlj" class="r-type text-center {{type == 'yhlj'? 'cur':''}}">
+              有害垃圾
+          </view>
+          <view bindtap="changeTab"  data-idx="khslj" class="r-type text-center {{type == 'khslj'? 'cur':''}}">
+              可回收垃圾
+          </view>
+      </view>
+      <scroll-view class="right-content">
+        
+      </scroll-view>
+        
+  </view>
+    
+</view>
