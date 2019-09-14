@@ -79,9 +79,10 @@
   display: inline-flex;
   background: #fff;
   height: 60rpx;
-  width: 200rpx;
+  width: 250rpx;
   margin: 0 10rpx;
   padding-left: 10rpx;
+  font-size: 28rpx;
 }
 .change-btn {
   background: #123a72;

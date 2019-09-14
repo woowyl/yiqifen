@@ -8,8 +8,8 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    yqfdata: 0,
-    hqdata: 0
+    yqfdata: '',
+    hqdata: ''
   },
   //事件处理函数
   bindViewTap: function() {

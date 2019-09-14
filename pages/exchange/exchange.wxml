@@ -28,7 +28,7 @@
         <text class="title">积分兑换</text>
         <view class="item">
           使用 
-          <input type="number" bindinput="countHq" value="{{yqfdata}}"/>
+          <input type="number" bindinput="countHq" placeholder="输入10的整数倍" value="{{yqfdata}}"/>
           益旗分积分
         </view>
         <view class="item">
