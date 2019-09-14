@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container mine">
+  <view class="userinfo w100">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class="w100 jifen w100">
+      <view class="w100 yiqifen-wrapper">
+        益旗分积分：1234
+      </view>
+      <view class="account-wrapper">
+        <view class="account-item">
+          金融机构积分账户信息：
+        </view>
+        <view class="account-item">
+          账号：92827278282 939393
+        </view>
+        <view class="account-item">
+          积分：1212
+        </view>
+      </view>    
+
+      <view class="exchange-action">
+        <text class="title">积分兑换</text>
+        <view class="item">
+          使用 
+          <input type="number" bindinput="countHq" value="{{yqfdata}}"/>
+          益旗分积分
+        </view>
+        <view class="item">
+          兑换 
+          <input type="number" disabled="true" value="{{hqdata}}"/>
+          金融机构积分
+        </view>
+
+        <button class="change-btn">立即兑换</button>
+      </view>
+        
+  </view>
+    
+</view>

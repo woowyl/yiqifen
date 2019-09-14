@@ -8,7 +8,8 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    status: true,
+    yqfdata: 0,
+    hqdata: 0
   },
   //事件处理函数
   bindViewTap: function() {
@@ -81,5 +82,10 @@ Page({
       })
     }
       
+  },
+  countHq: function(e) {
+    this.setData({
+      hqdata: parseInt(e.detail.value/10)
+    })
   }
 })

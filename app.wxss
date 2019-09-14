@@ -11,6 +11,9 @@
   align-items: center;
   justify-content: center;
 }
+.w100 {
+  width: 100%;
+}
 page {
   height: 100%;
 }

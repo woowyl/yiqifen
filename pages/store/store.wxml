@@ -18,7 +18,7 @@
         </navigator>
       </view>
       <view class="right text-center">
-        <navigator url="/pages/plist/plist" hover-class="navigator-hover">
+        <navigator url="/pages/exchange/exchange" hover-class="navigator-hover">
           <text >积分兑换</text>
         </navigator>
       </view>

@@ -1,16 +1,62 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
+<view class="container mine">
+  <view class="userinfo w100">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="">
+  <!-- <view class="">
     <button bindtap="gotoMe">绑定花旗账号</button>
+  </view> -->
+  <view class="w100 jifen w100">
+      <view class="w100 tc">
+        益旗分积分：1234
+      </view>
+      <view class="action-wrapper">
+        <view class="tc">
+          金融机构积分：{{status ? 1212 : '未绑定'}}
+        </view>
+        <button class="bind" bindtap="bindAccount">
+          {{status? '解除绑定' : '立刻绑定'}}
+        </button>
+          
+      </view>
+      
+     
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  
+  <view class="order w100">
+      <view class="order-header w100">
+        <view class="left">
+          我的订单
+        </view>
+
+        <view class="right">
+          查看全部订单
+        </view>
+      </view>
+      
+      <view class="order-type">
+        <view class="order-type-item">
+          <image src="../../images/mine/fukuan.png" />
+          <text>待付款</text>
+        </view>
+        <view  class="order-type-item">
+          <image src="../../images/mine/fahuo.png" />
+          <text>待发货</text>
+        </view>
+        <view  class="order-type-item">
+          <image src="../../images/mine/yifahuo.png" />
+          <text>已发货</text>
+        </view>
+        <view  class="order-type-item">
+          <image src="../../images/mine/ok.png" />
+          <text>已完成</text>
+        </view>
+      </view>
+        
   </view>
+    
 </view>

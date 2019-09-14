@@ -1,0 +1,15 @@
+<!--bind.wxml-->
+<view class="container bind w100">
+    <view class="form-wrapper w100">
+      <view class="first-line info">
+        <label class="text-center" for="">证件号码:</label>
+        <input type="text" placeholder="请输入证件号码"/>
+      </view>
+      <view class="second-line info">
+        <label class="text-center" for="">卡号:</label>
+        <input type="text" placeholder="请输入卡号"/>
+      </view>
+      <button class="submit" bindtap="confimInfo">确定</button>
+    </view>
+      
+</view>

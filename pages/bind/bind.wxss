@@ -1,0 +1,26 @@
+
+.bind {
+  padding-top: 100rpx;
+}
+
+.info {
+  display: flex;
+  justify-content: start;
+  height: 100rpx;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+
+}
+.info label {
+  width: 200rpx;
+  height: 50rpx;
+}
+.info input {
+  height: 50rpx;
+}
+.submit {
+  background: #123a72;
+  color: #fff;
+  width: 50%;
+  margin-top: 100rpx;
+}

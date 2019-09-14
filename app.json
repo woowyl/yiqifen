@@ -6,7 +6,9 @@
     "pages/reclaim/reclaim",
     "pages/store/store",
     "pages/plist/plist",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/bind/bind",
+    "pages/exchange/exchange"
   ],
   "window": {
     "backgroundTextStyle": "dark",
