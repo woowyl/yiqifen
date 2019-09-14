@@ -42,5 +42,17 @@ Page({
         },1000);
       }
     })    
+  },
+  alertValid2: function() {
+    wx.showToast({
+      title: '暂未开放',
+      icon: 'none',
+      duration: 2000,
+      success: function() {
+        setTimeout(function() {
+          wx.hideToast()
+        },1000);
+      }
+    })    
   }
 })

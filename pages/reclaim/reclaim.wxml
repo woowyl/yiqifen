@@ -13,7 +13,7 @@
       <image src="../../images/reclaim/i-phone.png" alt=""></image>
       <text class="type-text" selectable="false" space="false" decode="false">电子回收</text>
     </view>
-    <view class="cloth type" bindtap="alertValid">
+    <view class="cloth type" bindtap="alertValid2">
       <image src="../../images/reclaim/i-cloth.png" alt=""></image>
       <text class="type-text" selectable="false" space="false" decode="false">旧衣回收</text>   
     </view>
