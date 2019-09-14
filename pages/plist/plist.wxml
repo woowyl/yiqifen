@@ -1,0 +1,4 @@
+<!--plist.wxml-->
+<view class="container product-list">
+    <view ></view>
+</view>

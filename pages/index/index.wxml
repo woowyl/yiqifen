@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="top-search">
+  <view class="top-search" bindtap="searchAction">
      <icon class="i-search" type="search" size="20" color="#123a72"/>
      <input class="search-input" placeholder="请输入想要查询的垃圾名称"/>
   </view>
@@ -20,7 +20,12 @@
           </view>
       </view>
       <scroll-view class="right-content">
-        
+          <view>
+              {{rbCate}}
+          </view>
+          <text wx:for="{{rbList}}" wx:key="index" wx:for-item="rbItem">
+              {{rbItem}}
+          </text>  
       </scroll-view>
         
   </view>

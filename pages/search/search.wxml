@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top-search">
+     <icon class="i-search" type="search" size="20" color="#123a72"/>
+     <input class="search-input" name="search" type='text' confirm-type="search" auto-focus bindconfirm="bindconfirm"  placeholder="请输入想要查询的垃圾名称"/>
+  </view>
+  <view class="result-list">
+    <view class="result-item" wx:for="{{results}}" wx:for-index="idx" wx:for-item="result">
+    <text class="rb-name text-center" selectable="false" space="false" decode="false">
+      {{result.name}}
+    </text>
+
+    <text class="rb-type text-center">
+      {{result.type.name}}
+    </text>
+  </view>
+  </view>
+</view>

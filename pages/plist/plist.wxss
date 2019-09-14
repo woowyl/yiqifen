@@ -27,12 +27,10 @@
   background-color:rgba(18,58,114,.9);
 }
 .first-line .right {
-  background-color:#fff;
-  color: #000;
+  background-color:rgba(190,39,40,.9);
 }
 .second-line .left {
-  color: #000;
-  background-color:#fff;
+  background-color:rgba(190,39,40,.9);
 }
 .second-line .right {
   background-color:rgba(18,58,114,.9);
