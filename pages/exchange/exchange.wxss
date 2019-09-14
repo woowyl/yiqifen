@@ -1,5 +1,7 @@
 /**index.wxss**/
-
+.container.exchange {
+  justify-content: start;
+}
 .tc {
   text-align: center;
 }

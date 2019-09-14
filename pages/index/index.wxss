@@ -56,11 +56,12 @@
   color: #fff;
 }
 .right-content .title {
-  background: rgba(110, 158, 226, 0.9);
+  background: #ccc;
   font-size: 30rpx;
-  padding: 20rpx;
+  padding: 30rpx;
   box-sizing: border-box;
   color: #000;
+  text-indent: 40rpx;
 }
 .right-content .item {
   padding: 20rpx 30rpx;
