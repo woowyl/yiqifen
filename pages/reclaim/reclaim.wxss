@@ -1,5 +1,6 @@
 .reclaim {
   background: #f6f6f6;
+  justify-content: start;
 }
 .swiper-wapper {
   width: 100%;

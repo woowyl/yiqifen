@@ -48,10 +48,23 @@
   height: 100rpx;
   color: #123a72;
   font-size: 32rpx;
-  border-bottom: 1px solid #123a72;
+  border-bottom: 1px solid rgb(18, 58, 114);
 }
 
 .r-type.cur {
   background: #123a72;
   color: #fff;
+}
+.right-content .title {
+  background: rgba(110, 158, 226, 0.9);
+  font-size: 30rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  color: #000;
+}
+.right-content .item {
+  padding: 20rpx 30rpx;
+}
+.right-content .item:nth-child(odd) {
+  background: #f6f6f6;
 }

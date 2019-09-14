@@ -20,12 +20,12 @@
           </view>
       </view>
       <scroll-view class="right-content">
-          <view>
+          <view class="title">
               {{rbCate}}
           </view>
-          <text wx:for="{{rbList}}" wx:key="index" wx:for-item="rbItem">
+          <view class="item" wx:for="{{rbList}}" wx:key="index" wx:for-item="rbItem">
               {{rbItem}}
-          </text>  
+          </view>  
       </scroll-view>
         
   </view>

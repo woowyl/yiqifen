@@ -1,6 +1,7 @@
 /**index.wxss**/
 .container.mine {
   background: #f6f6f6;
+  justify-content: start;
 }
 .tc {
   text-align: center;

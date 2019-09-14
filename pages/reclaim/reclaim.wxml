@@ -19,5 +19,10 @@
     </view>
       
   </view>
-    
+  <view class="category">
+    <view class="phone type" bindtap="alertValid">
+      <image src="../../images/reclaim/i-exchange.png" alt=""></image>
+      <text class="type-text" selectable="false" space="false" decode="false">易物平台</text>
+    </view>
+  </view>
 </view>

@@ -6,6 +6,7 @@
     "pages/reclaim/reclaim",
     "pages/store/store",
     "pages/plist/plist",
+    "pages/pdetail/pdetail",
     "pages/search/search",
     "pages/bind/bind",
     "pages/exchange/exchange"
