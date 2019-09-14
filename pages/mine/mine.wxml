@@ -7,6 +7,9 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
+  <view class="">
+    <button bindtap="gotoMe">绑定花旗账号</button>
+  </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>

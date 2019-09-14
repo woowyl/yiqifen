@@ -15,6 +15,24 @@ Page({
       url: '../logs/logs'
     })
   },
+  gotoMe: function () {
+    wx.navigateToMiniProgram({
+      appId: 'wx8c777d630f2b78e3',
+      path: '',
+      extraData: {
+        openId: 'xxxx',
+        unionId: 'yyyy',
+        action: 'bind-citi'
+      },
+      envVersion: 'trial',
+      success(res) {
+        console.log('跳转成功')
+      },
+      fail(error) {
+        console.error(arguments);
+      }
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
