@@ -1,16 +1,16 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/mine/mine",
     "pages/reclaim/reclaim",
     "pages/store/store"
   ],
-  "window":{
-    "backgroundTextStyle":"dark",
+  "window": {
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#123a72",
     "navigationBarTitleText": "益旗分",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#333",
@@ -43,5 +43,8 @@
         "text": "我的"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json",
+  "debug": true,
+  "navigateToMiniProgramAppIdList": ["wx8c777d630f2b78e3"]
 }
