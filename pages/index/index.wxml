@@ -19,7 +19,7 @@
               可回收垃圾
           </view>
       </view>
-      <scroll-view class="right-content">
+      <scroll-view class="right-content" scroll-y="true">
           <view class="title">
               {{rbCate}}
           </view>
