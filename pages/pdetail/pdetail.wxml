@@ -32,26 +32,23 @@
              <view  style="font-size:26rpx;color:#ccc">市场价{{itemData.num}}</view>
          </view>
     </view>
-    <!--<view>
-        <text class="cun">尺寸</text>
-   </view>-->
+
     <view class="shu">
         <text class="cun">购买数量</text>
-       <view class="dian">
-        <view class="stepper">
-
-       <!-- 减号 -->
-       <text class="{{minusStatuses[index]}}" data-alpha-beta="0" bindtap="changeNum">-</text>
-       <!-- 数值 -->
-       <view class="nownum">{{buynum}}</view>
-       <!-- 加号 -->
-       <text class="normal" data-alpha-beta="1" bindtap="changeNum">+</text>
-      </view>
-      </view>
-   </view>
-   <view class="footc" bindtap="addShopCart" data-type="buynow" data-status="1">
-立即购买
-</view>
+        <view class="dian">
+            <view class="stepper">
+                <!-- 减号 -->
+                <text class="{{minusStatuses[index]}}" data-alpha-beta="0" bindtap="changeNum">-</text>
+                <!-- 数值 -->
+                <view class="nownum">{{buynum}}</view>
+                <!-- 加号 -->
+                <text class="normal" data-alpha-beta="1" bindtap="changeNum">+</text>
+            </view>
+        </view>
+    </view>
+    <view class="footc" bindtap="addShopCart" data-type="buynow" data-status="1">
+      立即兑换
+    </view>
   </view>
 </view>
 
@@ -60,46 +57,43 @@
 
 <!--图文详情头部-->
 <view>
-<view class="swiper-tab">
-  <view class="bre swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">图文详情</view>
-  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">产品参数</view>
-</view>
-<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
-
-  <!-- 图文详情 -->
-  <swiper-item>
-    <import src="../../wxParse/wxParse.wxml"/> 
-    <view class="wxParse">
-        <scroll-view style="height:2000rpx;" scroll-y='true'>
-          <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
-        </scroll-view>
+    <view class="swiper-tab">
+      <view class="bre swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">图文详情</view>
+      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">产品参数</view>
     </view>
-  </swiper-item>
-  
-
-
-  <!-- 产品参数 -->
-  <swiper-item>
-        <view class="p_all">
-      <view class="canshu df">
-        <view class="name">商品名称：</view>
-        <view class="df_1 c3">{{itemData.name}}</view>
-      </view>
-      <view class="canshu df">
-        <view class="name">商品编号：</view>
-        <view class="df_1 c3">{{itemData.pro_number}}</view>
-      </view>
-      <view class="canshu df">
-        <view class="name">分类：</view>
-        <view class="df_1 c3">{{itemData.cat_name}}</view>
-      </view>
-      <view class="canshu df">
-        <view class="name">售后：</view>
-        <view class="df_1 c3">签收之日48小时无条件退货</view>
-      </view>
-    </view>
-  </swiper-item>
-</swiper>
+    <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+      <!-- 图文详情 -->
+      <swiper-item>
+        <import src="../../wxParse/wxParse.wxml"/> 
+        <view class="wxParse">
+            <scroll-view style="height:2000rpx;" scroll-y='true'>
+              <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+            </scroll-view>
+        </view>
+      </swiper-item>
+      
+      <!-- 产品参数 -->
+      <swiper-item>
+            <view class="p_all">
+          <view class="canshu df">
+            <view class="name">商品名称：</view>
+            <view class="df_1 c3">{{itemData.name}}</view>
+          </view>
+          <view class="canshu df">
+            <view class="name">商品编号：</view>
+            <view class="df_1 c3">{{itemData.pro_number}}</view>
+          </view>
+          <view class="canshu df">
+            <view class="name">分类：</view>
+            <view class="df_1 c3">{{itemData.cat_name}}</view>
+          </view>
+          <view class="canshu df">
+            <view class="name">售后：</view>
+            <view class="df_1 c3">签收之日48小时无条件退货</view>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
 </view>
 <!---底部开始-->
 <view class="footfixed tc">

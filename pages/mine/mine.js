@@ -9,6 +9,7 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     status: true,
+    signstatus: false
   },
   //事件处理函数
   bindViewTap: function() {
@@ -36,6 +37,7 @@ Page({
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
+      console.log(app.globalData.userInfo);
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
@@ -81,5 +83,12 @@ Page({
       })
     }
       
+  },
+  bindSign: function() {
+    if (!this.data.signstatus) {
+      this.setData({
+        signstatus: true
+      })
+    } 
   }
 })

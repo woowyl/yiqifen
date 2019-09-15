@@ -3,13 +3,20 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/mine/mine",
+    "pages/mine/dingdan",
     "pages/reclaim/reclaim",
     "pages/store/store",
     "pages/plist/plist",
     "pages/pdetail/pdetail",
     "pages/search/search",
     "pages/bind/bind",
-    "pages/exchange/exchange"
+    "pages/exchange/exchange",
+    "pages/cart/cart",
+    "pages/address/address",
+    "pages/address/user-address/user-address",
+    "pages/order/pay",
+    "pages/order/detail",
+    "pages/order/downline"
   ],
   "window": {
     "backgroundTextStyle": "dark",
