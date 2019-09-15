@@ -19,6 +19,26 @@ const Data = {
     list:['X光片','干电池','电灯泡']
   }
 }
+const WasteSorting = {
+  'glj': '干垃圾',
+  'slj': '湿垃圾',
+  'khslj': '可回收垃圾',
+  'yhlj': '有害垃圾'
+}
+
+function loadData(type) {
+  const self = this;
+  wx.request({
+    url: app.d.yiqifen + '/share/a/share/api/queryGarbage?type=' + WasteSorting[type],
+    success(res) {
+      self.setData({
+        ...self.data,
+        rbList: res.data.filter(r => r.type === WasteSorting[type]).map(r => r.name)
+      })
+    }
+  })
+}
+
 Page({
   data: {
     type: 'glj',
@@ -35,6 +55,8 @@ Page({
       rbCate: Data[e.currentTarget.dataset.idx].cate,
       rbList: Data[e.currentTarget.dataset.idx].list
     })
+
+    loadData.call(this, e.currentTarget.dataset.idx);
   },
   searchAction: function() {
     wx.navigateTo({
@@ -42,7 +64,7 @@ Page({
     })
   },
   onLoad: function () {
-    
+    loadData.call(this, 'glj')
   },
   getUserInfo: function(e) {
 

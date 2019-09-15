@@ -18,6 +18,7 @@ Page({
       success: function (res) {
         console.log('res = ', res);
 
+
         if(res.data && res.data.length > 0) {
           self.setData({
             results: res.data.map(r => ({
