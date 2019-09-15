@@ -9,7 +9,8 @@ App({
     appKey:"",
     ceshiUrl:'https://shop.xnnut.com/index.php',
     appTitle:'w',
-    yiqifen: 'https://yiqifen.pa-ca.me'
+    yiqifen: 'https://yiqifen.pa-ca.me',
+    uniheart: 'https://uniheart.pa-ca.me'
   },
   onLaunch: function () {
     // 展示本地存储能力
