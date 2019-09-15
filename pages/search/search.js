@@ -1,5 +1,7 @@
 //index.js
 //获取应用实例
+var app = getApp();
+
 Page({
   data: {
     results: []
@@ -7,35 +9,46 @@ Page({
   //事件处理函数
   bindconfirm: function(e) {
     if (!e.detail.value) return;
-    this.setData({
-      results: [{
-      name: e.detail.value,
-      type: {
-        id: 4,
-        name: "有害垃圾"
+
+    var self = this;
+
+    wx.request({
+      url: app.d.yiqifen + '/share/a/share/api/queryGarbage?openId=1234567&name=' + e.detail.value,
+      method: 'get',
+      success: function (res) {
+        console.log('res = ', res);
+
+
+        if(res.data && res.data.length > 0) {
+          self.setData({
+            results: res.data.map(r => ({
+              name: r.name,
+              type: {
+                id: r.id,
+                name: r.type
+              }
+            }))
+          });
+        }else{
+          self.setData({
+            results: [{
+              name: '暂无结果',
+              type: {
+                name: '未知'
+              }
+            }]
+          })
+        }
+      },
+      error: function (error) {
+        wx.showToast({
+          title: '网络异常！',
+          duration: 2000
+        })
       }
-    },{
-      name: e.detail.value+"2",
-      type: {
-        id: 1,
-        name: "干垃圾"
-      }
-    },{
-      name: "垃圾3",
-      type: {
-        id: 2,
-        name: "湿垃圾"
-      }
-    },{
-      name: "垃圾3",
-      type: {
-        id: 3,
-        name: "可回收垃圾"
-      }
-    }]
-  });
+    });
   },
   onLoad: function () {
-    
+
   }
 })
