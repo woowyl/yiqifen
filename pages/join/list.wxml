@@ -1,0 +1,112 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <view class="store-list">
+    <view class="store-item">
+        <view class="img-wrapper">
+          <image src="http://p1.meituan.net/searchscenerec/e4d164c692c016638c37097f8e4c967b197858.png%40340w_255h_1e_1c_1l%7Cwatermark%3D0" alt=""></image>
+        </view>
+        <view class="info">
+            <text class="name">天天物品收购</text>
+            <text class="phone">电话：16712341655</text>
+            <text class="address">地址：双山路35号</text>
+        </view>
+          
+    </view>
+     <view class="store-item">
+        <view class="img-wrapper">
+          <image src="https://p0.meituan.net/merchantpic/5229103df254dd06a6055cbef7fd8cdc755185.jpg%40340w_255h_1e_1c_1l%7Cwatermark%3D0" alt=""></image>
+        </view>
+        <view class="info">
+            <text class="name">爱回收(莲花国际广场店)</text>
+            <text class="phone">电话：032-22232323</text>
+            <text class="address">地址：双山路35号</text>
+        </view>
+          
+    </view>
+
+     <view class="store-item">
+        <view class="img-wrapper">
+          <image src="http://p1.meituan.net/searchscenerec/e4d164c692c016638c37097f8e4c967b197858.png%40340w_255h_1e_1c_1l%7Cwatermark%3D0" alt=""></image>
+        </view>
+        <view class="info">
+            <text class="name">用真奢侈品鉴定回收中心</text>
+            <text class="phone">电话：012-12121212</text>
+            <text class="address">地址：双山路35号</text>
+        </view>
+          
+    </view>
+
+     <view class="store-item">
+        <view class="img-wrapper">
+          <image src="http://qcloud.dpfile.com/pc/SehQpUCQQLm2zUGdGJdeGIoRQi1k3l4yWUXbMeXt6Q37IVnGZWkZOnV-QKNjInIabKcq9vnEaGy3xLEf-_v_oA.jpg" alt=""></image>
+        </view>
+        <view class="info">
+            <text class="name">用真奢侈品回收中心(上海店)</text>
+            <text class="phone">电话：010-111333434</text>
+            <text class="address">地址：双山路35号</text>
+        </view>
+          
+    </view>
+
+      <view class="store-item">
+        <view class="img-wrapper">
+          <image src="http://p1.meituan.net/searchscenerec/e4d164c692c016638c37097f8e4c967b197858.png%40340w_255h_1e_1c_1l%7Cwatermark%3D0" alt=""></image>
+        </view>
+        <view class="info">
+            <text class="name">入驻商家1</text>
+            <text class="phone">电话：136123889933</text>
+            <text class="address">地址：双山路35号</text>
+        </view>
+          
+    </view>
+
+     <view class="store-item">
+        <view class="img-wrapper">
+          <image src="http://p1.meituan.net/searchscenerec/e4d164c692c016638c37097f8e4c967b197858.png%40340w_255h_1e_1c_1l%7Cwatermark%3D0" alt=""></image>
+        </view>
+        <view class="info">
+            <text class="name">入驻商家1</text>
+            <text class="phone">电话：15214562622</text>
+            <text class="address">地址：双山路35号</text>
+        </view>
+          
+    </view>
+
+
+     <view class="store-item">
+        <view class="img-wrapper">
+          <image src="http://qcloud.dpfile.com/pc/RkkkCDjT7Hv1eiphazHCyT-YSIpX0n1i98wAS74NAuNpD6PO3wpOWvNZxuNpyTcZbKcq9vnEaGy3xLEf-_v_oA.jpg" alt=""></image>
+        </view>
+        <view class="info">
+            <text class="name">入驻商家1</text>
+            <text class="phone">电话：13212341234</text>
+            <text class="address">地址：双山路35号</text>
+        </view>
+          
+    </view>
+
+     <view class="store-item">
+        <view class="img-wrapper">
+          <image src="http://qcloud.dpfile.com/pc/WK3bOKydEE2cHfNUDHwp16r87mT00Z5NeScKzXeuOj25ckncn2uz6BnwebDl3v1mbKcq9vnEaGy3xLEf-_v_oA.jpg" alt=""></image>
+        </view>
+        <view class="info">
+            <text class="name">入驻商家1</text>
+            <text class="phone">电话：0112-111221111</text>
+            <text class="address">地址：双山路35号</text>
+        </view>
+          
+    </view>
+
+     <view class="store-item">
+        <view class="img-wrapper">
+          <image src="http://qcloud.dpfile.com/pc/WK3bOKydEE2cHfNUDHwp16r87mT00Z5NeScKzXeuOj25ckncn2uz6BnwebDl3v1mbKcq9vnEaGy3xLEf-_v_oA.jpg" alt=""></image>
+        </view>
+        <view class="info">
+            <text class="name">入驻商家1</text>
+            <text class="phone">电话：021-29331212</text>
+            <text class="address">地址：双山路35号</text>
+        </view>
+          
+    </view>
+  </view>
+</view>

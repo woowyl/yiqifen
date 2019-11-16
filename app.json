@@ -16,7 +16,9 @@
     "pages/address/user-address/user-address",
     "pages/order/pay",
     "pages/order/detail",
-    "pages/order/downline"
+    "pages/order/downline",
+    "pages/greenroad/green",
+    "pages/join/list"
   ],
   "window": {
     "backgroundTextStyle": "dark",
