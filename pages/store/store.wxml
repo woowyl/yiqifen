@@ -6,12 +6,10 @@
             <text >礼品兑换</text>
         </navigator>
       </view>
-      <view class="right text-center">
-        <navigator url="/pages/greenroad/green" hover-class="navigator-hover">
-            <text >绿色通道</text>
-        </navigator>
+      <view bindtap="apply" class="right text-center">
+        <text >绿色通道</text>
       </view>
-        
+
     </view>
     <view class="second-line row">
       <view bindtap="alertValid2" class="left text-center">
@@ -24,6 +22,6 @@
           <text >积分兑换</text>
         </navigator>
       </view>
-        
-    </view>  
+
+    </view>
 </view>
