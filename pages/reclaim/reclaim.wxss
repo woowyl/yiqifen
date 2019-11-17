@@ -28,6 +28,9 @@
   background: #fff;
   border-radius: 16rpx;
 }
+.category navigator.type {
+  width: 100%;
+}
 .category .type image {
   width: 60rpx;
   height: 60rpx;

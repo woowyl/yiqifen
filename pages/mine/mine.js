@@ -27,7 +27,8 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     status: true,
-    signstatus: false
+    signstatus: false,
+    point: app.d.point
   },
   //事件处理函数
   bindViewTap: function() {
@@ -52,6 +53,11 @@ Page({
         console.error(arguments);
       }
     })
+  },
+  onShow: function() {
+    this.setData({
+      point: app.d.point
+    });
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
@@ -107,8 +113,11 @@ Page({
   },
   bindSign: function() {
     if (!this.data.signstatus) {
+      app.d.point = app.d.point+1;
+      var score = this.data.point;
       this.setData({
-        signstatus: true
+        signstatus: true,
+        point: score+1
       })
     }
   }

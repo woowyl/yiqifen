@@ -6,7 +6,9 @@ App({
     //hostVideo: 'http://zhubaotong-file.oss-cn-beijing.aliyuncs.com',
     userId: 1,
     appId:"",
+    point: 996,
     appKey:"",
+
     ceshiUrl:'https://shop.xnnut.com/index.php',
     appTitle:'w',
     yiqifen: 'https://yiqifen.pa-ca.me',

@@ -9,18 +9,22 @@
     </block>
   </swiper>
   <view class="category">
-    <view class="phone type" bindtap="alertValid">
+    <view class="phone type">
+    <navigator class="type" url="/pages/join/list" hover-class="navigator-hover">
       <image src="../../images/reclaim/i-phone.png" alt=""></image>
       <text class="type-text" selectable="false" space="false" decode="false">电子回收</text>
+    </navigator>
     </view>
-    <view class="cloth type" bindtap="alertValid">
+    <view class="cloth type">
+    <navigator class="type" url="/pages/join/list" hover-class="navigator-hover">
       <image src="../../images/reclaim/i-cloth.png" alt=""></image>
       <text class="type-text" selectable="false" space="false" decode="false">旧衣回收</text>   
+    </navigator>
     </view>
       
   </view>
   <view class="category">
-    <view class="phone type" bindtap="alertValid2">
+    <view class="phone type">
       <image src="../../images/reclaim/i-exchange.png" alt=""></image>
       <text class="type-text" selectable="false" space="false" decode="false">易物平台</text>
     </view>

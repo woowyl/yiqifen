@@ -11,14 +11,12 @@ Page({
     if (!e.detail.value) return;
 
     var self = this;
-
+    console.log(app.d.point);
+    app.d.point = app.d.point+1;
     wx.request({
       url: app.d.yiqifen + '/share/a/share/api/queryGarbage?openId=1234567&name=' + e.detail.value,
       method: 'get',
       success: function (res) {
-        console.log('res = ', res);
-
-
         if(res.data && res.data.length > 0) {
           self.setData({
             results: res.data.map(r => ({

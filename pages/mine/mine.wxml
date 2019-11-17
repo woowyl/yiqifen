@@ -13,7 +13,7 @@
   <view class="w100 jifen w100">
       <view class="action-wrapper">
         <view class=" tc">
-          益旗分积分：1234
+          益旗分积分：{{point}}
         </view>
          <button class="bind {{signstatus? 'has':''}}" bindtap="bindSign">
           {{signstatus? '已签到' : '签到领积分'}}
