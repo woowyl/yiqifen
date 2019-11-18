@@ -2,6 +2,24 @@
 //获取应用实例
 const app = getApp()
 
+function login(){
+  wx.login({
+    success(res){
+      if (res.code) {
+        //发起网络请求
+        wx.request({
+          url: app.d.uniheart + '/passport/weapp-yiqifen/callback?code=' + res.code,
+          success(res) {
+            console.log('openid 结果：', res)
+          }
+        })
+      } else {
+        console.log('登录失败！' + res.errMsg)
+      }
+    }
+  })
+}
+
 Page({
   data: {
     motto: 'Hello World',
@@ -52,6 +70,7 @@ Page({
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
+        console.log('res = ', res)
         this.setData({
           userInfo: res.userInfo,
           hasUserInfo: true
@@ -71,12 +90,14 @@ Page({
     }
   },
   getUserInfo: function(e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
+
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+
+    login()
   },
   bindAccount: function() {
     if (this.data.status) {
@@ -88,7 +109,7 @@ Page({
         url: '/pages/bind/bind'　　// 页面 A
       })
     }
-      
+
   },
   bindSign: function() {
     if (!this.data.signstatus) {
@@ -98,6 +119,6 @@ Page({
         signstatus: true,
         point: score+1
       })
-    } 
+    }
   }
 })
