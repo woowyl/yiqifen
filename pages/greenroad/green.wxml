@@ -1,4 +1,34 @@
-<!--logs.wxml-->
-<view class="container log-list">
-    <text class="log-item">这里放链接</text>
+<!-- logs.wxml -->
+<view class="container-green">
+    <view wx:if="{{citiApplications.length > 0}}">
+        <view class="header">
+            <Text>您已申请花旗信用卡：</Text>
+        </view>
+        <view class="page-section" wx:for="{{citiApplications}}">
+            <view>
+                <Text>申请编号：{{item.applicationId}}</Text>
+            </view>
+            <view>
+                <Text>当前状态：{{item.applicationStage}}</Text>
+            </view>
+            <view class="tip">
+                <Text>请您保持手机号畅通，我们的客户经理将会给您回电。</Text>
+            </view>
+        </view>
+    </view>
+    <view wx:if="{{citiApplications.length <= 0}}">
+        <view class="page-section">
+            <Text>填写手机号，一键申请花旗信用卡</Text>
+        </view>
+        <form bindsubmit="apply" bindreset="formReset">
+            <view class="page-section">
+                <view class="weui-cells weui-cells_after-title">
+                    <view class="weui-cell weui-cell_input">
+                        <input class="weui-input" auto-focus placeholder="手机号" maxlength="11" bindinput="inputMobile" />
+                    </view>
+                </view>
+            </view>
+            <button type="primary" form-type="submit">一键申请</button>
+        </form>
+    </view>
 </view>
